@@ -1,0 +1,44 @@
+:root {
+    --primary-color: #355834;
+    --secondary-color: #C2A878;
+    --accent-color: #6E633D;
+    --type-color: #241603;
+    --accent-type-color: #119228;
+
+    --heading-font: "Berkshire Swash", sans-serif;
+    --body-font: "Almarai", sans-serif;
+}
+
+.color {
+    height: 30px;
+    width: 30px;
+}
+
+.primary {
+    background-color: var(--primary-color);
+}
+
+.secondary {
+    background-color: var(--secondary-color);
+}
+
+.accent {
+    background-color: var(--accent-color);
+}
+
+.type {
+    background-color: var(--type-color);
+}
+
+.accent-type {
+    background-color: var(--accent-type-color);
+}
+
+
+.heading-type {
+    font-family: var(--heading-font);
+}
+
+.body-type {
+    font-family: var(--body-font);
+}
