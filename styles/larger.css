@@ -1,85 +1,20 @@
-@media screen and (min-width: 600px) {
-      :root {
-        --header-background-color: #fae9d6;
-        --accent-color: #6d836a;
-        --text-color: #294325;
-        --secondary-text-color: rgb(249, 246, 237);
-        --hover-color: #627d5f;
-    
-        --headings-font: Kalnia, serif;
-        --body-font: "Noto Sans", sans-serif;
-        
-        --box-padding: 1rem;
-    }
-    
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    
-    }
-    
-    body {
-        font-family: var(--body-font);
-        color: var(--text-color);    
-    }
-    
-    h1 {
-        font-family: var(--headings-font);
-        font-weight: 400;
-    }
-    
-    /* header */
-    
-    header {
-        background-color: var(--header-background-color);
-        padding: var(--box-padding);
-        padding-bottom: 0;
-    }
-    
-    .header {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 24px;
-    }
-    
-    .profile-img {
-        border: 2px solid var(--accent-color);
-        border-radius: 44px 44px 0 0;
-    }
-    
-    .header-title {
-        font-family: var(--headings-font);
-        font-size: 48px;
-        font-weight: 350;
-    }
-    
+@media screen and (min-width: 430px) {        
     /* Nav */
-     nav {
-        margin: auto;
-        padding: 1rem;
-        height: 42px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;  
-        justify-content: flex-end;
-        background-color: var(--header-background-color);  
-     }
-    
+
      .nav_links {
-        list-style: none;
-        display: flex;
-        align-items: center;
-        gap: .5rem;
-     }
-    
-     .nav_links a {
-        text-decoration: none;
-        color: var(--text-color);
+       padding: 1rem;
+       height: 42px;
+       flex-direction: row;
+       justify-content: flex-end; 
+       justify-items: flex-end;
      }
     
      .link {
+       display: block;
+       width: 100%;
+       border-bottom: none;
+       text-align: center;
+
         padding: .5rem 1rem;
         font-weight: 600;
         font-size: 12px;
@@ -157,14 +92,6 @@
     
      .learning-activities {
         grid-column: 1/4;
-     }
-    
-     /* footer */
-    footer {
-        grid-column: 1/5;
-        background-color: var(--accent-color);
-        color: var(--secondary-text-color);
-        padding: var(--box-padding);
-    }    
+     }   
 }
 

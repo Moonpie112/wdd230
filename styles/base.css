@@ -59,42 +59,35 @@ header {
     background-color: var(--header-background-color);  
  }
 
- nav ul {
-    margin: auto;
-    height: auto;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-between;  
-    justify-content: flex-end;
- }
-
  .nav_links {
+   margin: auto;
+   height: auto;
+   padding: 0;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   justify-content: space-between;
     list-style: none;
-    display: flex;
-    align-items: center;
     gap: .5rem;
  }
 
- .nav_links li {
+ /* creates lines under links */
+ .link {
     display: block;
     width: 100%;
     border-bottom: 1px solid var(--accent-color);
     text-align: center;
 
- }
- .nav_links a {
-    text-decoration: none;
-    color: var(--text-color);
- }
-
- .link {
     padding: .5rem 1rem;
     font-weight: 600;
     font-size: 12px;
     transition: .03s;
  }
 
+ .nav_links a {
+   text-decoration: none;
+   color: var(--text-color);
+}
 
 
  /* main */
