@@ -1,6 +1,6 @@
 :root {
     --header-background-color: #fae9d6;
-    --accent-color: #6d836a;
+    --accent-color: #485846;
     --text-color: #294325;
     --secondary-text-color: rgb(249, 246, 237);
     --hover-color: #627d5f;
@@ -55,20 +55,38 @@ header {
 }
 
 /* Nav */
+
  nav {
     background-color: var(--header-background-color);  
  }
 
- .nav_links {
-   margin: auto;
-   height: auto;
-   padding: 0;
+#menu {
+   text-decoration: none;
+   background-color: var(--header-background-color);
    display: flex;
-   align-items: center;
-   flex-direction: column;
-   justify-content: space-between;
+   padding: 1rem;
+   padding-bottom: 0;
+   color: var(--text-color);
+}
+
+#menu::before {
+   content: "☰";
+}
+
+#menu.open::before {
+   content: "x";
+}
+
+
+ .nav_links {
+    margin: auto;
+    height: auto;
     list-style: none;
     gap: .5rem;
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+    justify-content: center;
  }
 
  /* creates lines under links */
@@ -77,7 +95,6 @@ header {
     width: 100%;
     border-bottom: 1px solid var(--accent-color);
     text-align: center;
-
     padding: .5rem 1rem;
     font-weight: 600;
     font-size: 12px;
@@ -96,7 +113,7 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 1rem;
-    margin: 1rem auto;
+    margin: auto;
     max-width: 1200px;
  }
 
@@ -123,6 +140,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin: auto;
  }
 
  .week {
@@ -147,7 +165,12 @@ header {
  }
 
  .activities {
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
+ }
+
+ .week-list {
+   
  }
 
  .week-list li {
@@ -155,6 +178,10 @@ header {
     font-weight: 500;
     list-style: none;
     text-transform: capitalize;
+ }
+
+ .week a {
+   margin: .5rem 0;
  }
 
  .week a:hover {
