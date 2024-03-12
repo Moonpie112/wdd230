@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Kayla Moon">
     <meta name="description" content="The landing page for The Shire's Chamber of Commerce Site">
-    <title>Document</title>
+    <title>Chamber of Commerce for The Shire</title>
     <!-- favicon -->
     <link rel="icon" href="images/favicon.ico">
     <!-- social media -->
@@ -13,8 +13,229 @@
     <meta property="og:type" content="Chamber of Commerce Site">
     <meta property="og:image" content="C:\Users\kayla\Dropbox\My PC (DESKTOP-DITIAMG)\Desktop\Winter 2024 Classes\wdd230\chamber\images\og-image.jpg">
     <meta property="og:URL" content="">
+    <!-- styles -->
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Berkshire+Swash&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <header class="header">
+        <nav class="nav-bar">
+            <div class="logo-link">
+                <div class="logo-words">
+                    <img class="logo" src="images/logo.png" alt="The Shire Logo" width="100">
+                    <p class="logo-shire">The Shire</p>
+                </div>
+                <p class="logo-chamber">Chamber of Commerce</p>
+            </div>
+            <div class="links">
+                <ul class="top-links">
+                    <li><a href="#">Business Directory</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+                <div class="button-nav-links">
+                    <ul class="nav-links">
+                        <li><a href="#">Member Information</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Event Calendar</a></li>
+                        <li><a href="#">Tourism</a></li>
+                    </ul>
+                    <div class="nav-buttons">
+                        <div class="btn-search">
+                            <img src="images/icon-search.png" alt="search icon" width="24">
+                        </div>
+                        <button class="btn-join">Join Us</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="hder-body">
+            <div class="hder-text">
+                <div class="hder-heading">
+                    <h1 class="hder-title">Welcome to The Shire</h1>
+                    <h2 class="hder-subtitle">Where Community Thrives</h2>
+                </div>
+                <p class="hder-paragraph">Step into The Shire Chamber of Commerce, where every handshake comes with a smile and every business is a cherished member of our close-knit family. Here, we're all about building bridges, not just businesses. Join us in creating a vibrant community where neighbors support neighbors, ideas spark conversations, and laughter echoes through the streets!</p>
+            </div>
+            <button class="hder-cta">Get Involved Today</button>
+        </div>
+    </header>
+    <main>
+        <div class="business-spotlight">
+            <h3 class="spot-title">Business Spotlight</h3>
+            <div class="spot-content">
+                <div class="spot-card">
+                    <img class="spot-img" src="images/green-dragon-inn.png" alt="The Green Dragon Inn">
+                    <div class="card-content">
+                        <div class="spot-text">
+                            <p class="spot-head">The Green Dragon Inn</p>
+                            <p class="spot-paragraph">A renowned brewery crafting fine ales, meads, and ciders with locally sourced ingredients from The Shire. With taverns across the region, it offers a warm atmosphere for enjoying hearty meals and lively entertainment.</p>
+                        </div>
+                        <div class="spot-social">
+                            <div class="spot-social-img">
+                                <img src="images/icon-facebook-white.png" alt="facebook" width="7">
+                            </div>
+                            <div class="spot-social-img">
+                                <img src="images/icon-twitter-white.png" alt="twitter" width="14">
+                            </div>
+                            <div class="spot-social-img">
+                                <img src="images/icon-instagram-white.png" alt="instagram" width="14">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="spot-card">
+                    <img class="spot-img" src="images/harvesters-co-op.png" alt="Hobbits Harvesting">
+                    <div class="card-content">
+                        <div class="spot-text">
+                            <p class="spot-head">Harvesters Co-op</p>
+                            <p class="spot-paragraph">A cooperative specializing in organic farming and agricultural products, providing a variety of fresh produce grown using sustainable methods. They promote community-supported agriculture (CSA) programs and farm-to-table initiatives.</p>
+                        </div>
+                        <div class="spot-social">
+                            <div class="spot-social-img">
+                                <img src="images/icon-facebook-white.png" alt="facebook" width="7">
+                            </div>
+                            <div class="spot-social-img">
+                                <img src="images/icon-twitter-white.png" alt="twitter" width="14">
+                            </div>
+                            <div class="spot-social-img">
+                                <img src="images/icon-instagram-white.png" alt="instagram" width="14">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="upcoming-events">
+            <h3 class="events-title">Upcoming Events</h3>
+            <div class="events-content">
+                <div class="event-card">
+                    <img class="event-img" src="images/shire-harvest-festival.png" alt="Groups of people at festival">
+                    <div class="event-text">
+                        <div class="event-heading">
+                            <p class="event-date">Apr 3, Wed 4pm-10pm</p>
+                            <p class="event-title">Shire Harvest Festival</p>
+                        </div>
+                        <button class="learn-btn">Learn more
+                            <img class="btn-arrow" src="images/icon-arrow.png" alt="arrow icon">
+                        </button>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-img">
+                        <img class="event-img" src="images/hobbiton-market-days.png" alt="Hobbits at a market">
+                    </div>
+                    <div class="event-text">
+                        <div class="event-heading">
+                            <p class="event-date">Every Wednesday 2pm-7pm</p>
+                            <p class="event-title">Hobbiton Market Days</p>
+                        </div>
+                        <button class="learn-btn">Learn more
+                            <img class="btn-arrow" src="images/icon-arrow.png" alt="arrow icon">
+                        </button>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-img">
+                        <img class="event-img" src="images/chug-off.png" alt="Hobbits Cheering at Bar">
+                    <div class="event-text">
+                        <div class="event-heading">
+                            <p class="event-date">May 10, Friday 8pm</p>
+                            <p class="event-title">Green Dragon Inn Chug Off</p>
+                        </div>
+                        <button class="learn-btn">Learn more
+                            <img class="btn-arrow" src="images/icon-arrow.png" alt="arrow icon">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="weather-section">
+            <div class="weather">
+                <div class="weather-heading">
+                    <div class="weather-text">
+                        <p class="weather-shire">The Shire</p>
+                        <p class="weather-number">00°F</p>
+                    </div>
+                    <img class="weather-img" src="images/weather.png" alt="weather icon">
+                </div>
+                <div class="weather-week">
+                    <div class="weather-card">
+                        <img class="weather-card-img" src="images/weather.png" alt="weather icon">
+                        <div class="weather-card-text">
+                            <p class="card-degrees">00°</p>
+                            <p class="card-day">Sun</p>
+                        </div>
+                    </div>
+                    <div class="weather-card">
+                        <img class="weather-card-img" src="images/weather.png" alt="weather icon">
+                        <div class="weather-card-text">
+                            <p class="card-degrees">00°</p>
+                            <p class="card-day">Sun</p>
+                        </div>
+                    </div>
+                    <div class="weather-card">
+                        <img class="weather-card-img" src="images/weather.png" alt="weather icon">
+                        <div class="weather-card-text">
+                            <p class="card-degrees">00°</p>
+                            <p class="card-day">Sun</p>
+                        </div>
+                    </div>
+                    <div class="weather-card">
+                        <img class="weather-card-img" src="images/weather.png" alt="weather icon">
+                        <div class="weather-card-text">
+                            <p class="card-degrees">00°</p>
+                            <p class="card-day">Sun</p>
+                        </div>
+                    </div>
+                    <div class="weather-card">
+                        <img class="weather-card-img" src="images/weather.png" alt="weather icon">
+                        <div class="weather-card-text">
+                            <p class="card-degrees">00°</p>
+                            <p class="card-day">Sun</p>
+                        </div>
+                    </div>
+                    <div class="weather-card">
+                        <img class="weather-card-img" src="images/weather.png" alt="weather icon">
+                        <div class="weather-card-text">
+                            <p class="card-degrees">00°</p>
+                            <p class="card-day">Sun</p>
+                        </div>
+                    </div>
+                    <div class="weather-card">
+                        <img class="weather-card-img" src="images/weather.png" alt="weather icon">
+                        <div class="weather-card-text">
+                            <p class="card-degrees">00°</p>
+                            <p class="card-day">Sun</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="social-media">
+            <div class="footer-social">
+                <img src="images/icon-twitter-black.png" alt="twitter" width="14">
+            </div>
+            <div class="footer-social">            
+                <img src="images/icon-instagram-black.png" alt="instagram" width="14">
+            </div>
+            <div class="footer-social">
+                <img src="images/icon-facebook-black.png" alt="facebook" width="14">
+            </div>
+        </div>
+        <div class="project-info">
+            <h6 class="project-header">Project Info</h6>
+            <p class="name">Kayla Moon</p>
+            <p class="class">WDD230 Final Project</p>
+            <p class="last-modified">Last Modified</p>
+        </div>
+    </footer>
 </body>
 </html>
