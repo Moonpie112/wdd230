@@ -131,6 +131,13 @@ header {
     max-width: 1200px;
  }
 
+ .hero {
+   grid-column: 1/5;
+ }
+ 
+ .temple {
+ }
+
  .main-title {
     grid-column: 1/5;
     background-color: var(--accent-color);
