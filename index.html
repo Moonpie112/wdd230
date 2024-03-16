@@ -19,17 +19,17 @@
     <!-- Open Graph for Facebook -->
     <meta property="og:title" content="WDD230 | Kayla Moon">
     <meta property="og:type" content="Website">
-    <meta property="og:image" content="C:\Users\kayla\Dropbox\My PC (DESKTOP-DITIAMG)\Desktop\Winter 2024 Classes\wdd230\images\meta-image.jpg">
+    <meta property="og:image" content="C:\Users\kayla\Dropbox\My PC (DESKTOP-DITIAMG)\Desktop\Winter 2024 Classes\wdd230\images\meta-image.webp">
     <meta property="og:URL" content="https://moonpie112.github.io/wdd230/">
 </head>
 <body>
     <!-- header -->
     <header>
         <div class="header">
-            <img class="profile-img" src="images/home-main.jpg" alt="Kayla and her husband" width="100">
+            <img class="profile-img" src="images/home-main.webp" alt="Kayla and her husband" width="100">
             <div class="header-title"><span>Kayla Moon</span></div>
         </div>
-        <img src="images/night-mode.png" alt="dark mode" id="darkBtn" width="24">
+        <img src="images/night-mode.webp" alt="dark mode" id="darkBtn" width="24">
     </header>
     
     <!-- navigation -->
@@ -49,6 +49,7 @@
     <!-- main -->
     <main>
         <div class="hero">
+            <p class="hero-title">Washington DC Temple</p>
             <picture class="temple">
                 <source media="(max-width: 430px)" srcset="images/temple-small.webp">
                 <img src="images/temple-large.webp" alt="the dc temple" width="960" height="400">
@@ -83,6 +84,7 @@
                             <h3>Week 3</h3>
                             <a href="week03/lazyload.html">Responsive Images</a>
                             <a href="week03/responsive-images.html">Lazy Loading</a>
+                            <a href="week03/bom.html">BOM</a>
                         </div>
                     </li>
                     <li>
@@ -108,8 +110,11 @@
         </section>
         <section class="card information">
             <h2>Information</h2>
+            <p>Page Visits: <span id="counter">1</span></p>
             <!-- eventually will put in info about the weather, number of visits, etc -->
         </section>
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50489.8428364715!2d-79.39626658140484!3d37.72870971790323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b3333e2d577559%3A0x68325cca049b8a97!2sBuena%20Vista%2C%20VA!5e0!3m2!1sen!2sus!4v1710624718873!5m2!1sen!2sus" width="600" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <script src="scripts/visitscounter.js"></script>
     </main>
     
     <!-- footer -->
