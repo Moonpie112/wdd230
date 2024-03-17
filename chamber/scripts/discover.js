@@ -9,9 +9,7 @@ localStorage.setItem('lastVisitTimestamp', currentTimeStamp); //updates currentT
 
 let timeBetweenVisits = currentTimeStamp - lastVisitTimestamp;
 
-daysBetweenVisits = Math.floor(timeBetweenVisits / (1000 * 60 * 60 * 24));
-
-console.log(daysBetweenVisits);
+daysBetweenVisits = Math.ceil(timeBetweenVisits / (1000 * 60 * 60 * 24));
 
 if (numVisits === 0) {
     visitor.textContent = 'Welcome! Let us know if you have any questions.'
@@ -19,6 +17,10 @@ if (numVisits === 0) {
     if (timeBetweenVisits < 86400000) {
         visitor.textContent = 'Back so soon! Awesome!'
     } else {
-        visitor.textContent = `You last visited ${daysBetweenVisits} days ago.`
+        if (daysBetweenVisits === 1) {
+            visitor.textContent = `You last visited ${daysBetweenVisits} day ago.`
+            } else {
+            visitor.textContent = `You last visited ${daysBetweenVisits} days ago.`
+        }
     }
 };
