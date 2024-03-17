@@ -1,4 +1,4 @@
-const visitsDisplay = document.querySelector('#counter');
+const visitsDisplay = document.querySelector('#visitor');
 
 let numVisits = Number(window.localStorage.getItem('numVisits-ls')) || 0;
 

@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Kayla Moon">
     <meta name="description" content="Discover the features and locations of The Shire">
-    <title>Discover</title>
+    <title>Discover: The Shire Chamber of Commerce Site</title>
     <!-- favicon -->
     <link rel="icon" href="images/favicon.ico">
     <!-- social media -->
-    <meta property="og:title" content="Chamber of Commerce for the Shire">
-    <meta property="og:type" content="Chamber of Commerce Site">
+    <meta property="og:title" content="Discover the Chamber of Commerce for the Shire">
+    <meta property="og:type" content="Discover the Shire's Chamber of Commerce Site">
     <meta property="og:image" content="C:\Users\kayla\Dropbox\My PC (DESKTOP-DITIAMG)\Desktop\Winter 2024 Classes\wdd230\chamber\images\og-image.jpg">
     <meta property="og:URL" content="">
     <!-- styles -->
@@ -56,7 +56,7 @@
         <div class="hder-body">
             <div class="hder-text">
                 <div class="hder-heading">
-                    <h1 class="hder-title">Welcome! Let us know if you have any questions.</h1>
+                    <h1 class="hder-title"><span id="visitor">Loading...</span></h1>
                 </div>
                 <p class="hder-paragraph">Embark on a journey through the charming villages of The Shire, where hobbit-holes dot the rolling hillsides and markets teem with artisanal crafts. Join in lively festivals, sample delectable cuisine, and experience the warmth of our communities. Whether you're a seasoned traveler or a curious soul, The Shire invites you to discover its enchanting wonders. Start your adventure today on our Discover page!</p>
             </div>
@@ -185,6 +185,8 @@
                 <p class="card-paragraph">Despite its predominantly rural character, The Shire boasts a well-maintained network of footpaths, dirt roads, and bridges connecting its picturesque villages and settlements. Pony-drawn carts and wagons are commonly used for transportation, while the occasional barge navigates the tranquil waters of the Brandywine River.</p>
             </div>
         </div>
+
+<!-- Features ---------------------->
         <div class="features">
             <h2 class="features-title">Features</h2>
             <div class="feature-card">
@@ -195,7 +197,7 @@
                     </div>
                     <button class="feature-btn">Learn more</button>
                 </div>
-                <img src="images/discover/bag-end.webp" alt="image of a hobbit hole" height="300" width="600">
+                <img src="images/discover/bag-end.webp" alt="image of a hobbit hole" height="300" width="600" loading="lazy">
             </div>
             <div class="feature-card">
                 <div class="feature-text">
@@ -205,7 +207,7 @@
                     </div>
                     <button class="feature-btn">Learn more</button>
                 </div>
-                <img src="images/discover/party-tree.webp" alt="A tree with latterns hanging from it's branches" height="300" width="600">
+                <img src="images/discover/party-tree.webp" alt="A tree with latterns hanging from it's branches" height="300" width="600" loading="lazy">
             </div>
             <div class="feature-card">
                 <div class="feature-text">
@@ -215,7 +217,7 @@
                     </div>
                     <button class="feature-btn">Learn more</button>
                 </div>
-                <img src="images/discover/brandywine-bridge.webp" alt="A bridge over a river" height="300" width="600">
+                <img src="images/discover/brandywine-bridge.webp" alt="A bridge over a river" height="300" width="600" loading="lazy">
             </div>
             <div class="feature-card">
                 <div class="feature-text">
@@ -225,7 +227,7 @@
                     </div>
                     <button class="feature-btn">Learn more</button>
                 </div>
-                <img src="images/discover/tuckborough-market.webp" alt="Hobbits in a market" height="300" width="600">
+                <img src="images/discover/tuckborough-market.webp" alt="Hobbits in a market" height="300" width="600" loading="lazy">
             </div>
             <div class="feature-card">
                 <div class="feature-text">
@@ -235,7 +237,7 @@
                     </div>
                     <button class="feature-btn">Learn more</button>
                 </div>
-                <img src="images/discover/the-far-downs.webp" alt="" height="300" width="600">
+                <img src="images/discover/the-far-downs.webp" alt="" height="300" width="600" loading="lazy">
             </div>
             <div class="feature-card">
                 <div class="feature-text">
@@ -245,9 +247,11 @@
                     </div>
                     <button class="feature-btn">Learn more</button>
                 </div>
-                <img src="images/discover/old-forest.webp" alt="" height="300" width="600">
+                <img src="images/discover/old-forest.webp" alt="" height="300" width="600" loading="lazy">
             </div>
         </div>
+<!-- Scripts -->
+        <script src="scripts/discover.js"></script>
     </main>
     <footer>
         <div class="social-media">
