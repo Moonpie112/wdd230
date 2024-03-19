@@ -18,6 +18,10 @@
     padding: 0;
 }
 
+
+row {
+    border-bottom: none;
+}
 h1, h2, h3 {
     font-family: var(--heading-font);
 }
